@@ -1,0 +1,56 @@
+
+<html>
+<head>
+    <title>search flight form</title>
+    <script type="text/javascript">
+        function Validate() {
+            var origin = document.getElementById("origin");
+            if (origin.value == "") {
+                                alert("Please select an option!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div id="error"></div>
+    <form>
+        <p>
+        <label for ="origin">origin</label>
+        <select id="origin">
+            <option value="origin">select origin city</option>
+        <option value="kochi">kochi</option>
+        <option value="mumbai">mumbai</option>
+        </select>  
+        </p>
+        <p>
+        <label for ="destination">destination</label>
+        <select id="destination">
+            <option value="destination">select destination city</option>
+        <option value="kochi">kochi</option>
+        <option value="mumbai">mumbai</option>
+        </select>   
+        </p>   
+        <p>
+            <label for="select date of journey">date of journey</label>
+            <select id="date of journey">
+                <input type="date" name="date">
+            </select>
+        </p>
+        <p>
+            <label for ="No. of passengers">No. of passengers</label>
+            <select id="No. of passengers">
+                <option value="No. of passengers">select No. of passengers</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            </select>  
+            </p>
+            <input type="submit" value="search flight" onclick="return validate()"/>
+            
+    </form>
+    
+    
+</div>
+</body>
+</html>
